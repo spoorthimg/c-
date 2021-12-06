@@ -1,0 +1,17 @@
+/*write a program to REVERSE the number?*/
+#include<iostream.h>
+using namespace std;
+int main()
+{
+   int number,reminder,reverse=0;
+   cout<<"Please enter the number that you want to Reverse=";
+   cin>>number;
+   while(number>0)
+      {
+      reminder=number%10;
+      reverse=reverse*10+reminder;
+      number=number/10;
+      }
+   cout<<"\nReverse of given number="<<reverse<<endl;
+   return 0;
+}   
